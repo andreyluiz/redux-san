@@ -8,23 +8,13 @@ module.exports = {
     filename: 'app.js'
   },
   module: {
-    // preLoaders: [
-    //   {
-    //     test: /\.tag$/,
-    //     exclude: /node_modules/,
-    //     loader: 'riotjs-loader',
-    //     query: {
-    //       type: 'none'
-    //     }
-    //   }
-    // ],
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015']
+          presets: ['react', 'es2015']
         }
       }
     ]

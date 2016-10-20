@@ -1,10 +1,11 @@
-class Greeter {
-	constructor(name = 'Andrey') {
-		this.name = name;
-	}
-	greet() {
-		console.log(`Hello ${this.name}!`);
+import React, { Component } from 'react';
+
+class App extends Component {
+	render() {
+		return (
+			<h1>Hello</h1>
+		);
 	}
 }
 
-new Greeter().greet();
+ReactDOM.render(<App/>, document.getElementById('root'));
