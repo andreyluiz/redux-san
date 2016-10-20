@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/index',
   output: {
     path: path.join(__dirname, '/public/js'),
-    filename: 'app.js'
+    filename: 'app.js',
+    publicPath: 'js'
   },
   module: {
     loaders: [
@@ -18,5 +19,10 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    contentBase: './public',
+    inline: true,
+    hot: true
   }
 };
