@@ -1,13 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './scss/app.scss';
-
-class App extends Component {
-	render() {
-		return (
-			<h1>Hello</h1>
-		);
-	}
-}
+import App from './js/App';
 
 ReactDOM.render(<App/>, document.getElementById('root'));
